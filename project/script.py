@@ -53,5 +53,6 @@ def script_generator(n):
     for i in range(n):
         yield module_variable
 
-
-
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
