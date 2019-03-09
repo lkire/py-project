@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-"""This is a moduel demonstrating a script 
+"""This is a module demonstrating a script 
 
-Thes 
+A collection of functions that print 'script'.
 
 Example:
     This is an example that exemplifies in the ``Example`` section::
