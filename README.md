@@ -1,3 +1,4 @@
+[![Build Status](http://lkire.com:8082/buildStatus/icon?job=pipeline-test0%2Fmaster)](http://lkire.com:8082/job/pipeline-test0/job/master/)
 
 Export the environment: `conda env export > env.yml`
 
