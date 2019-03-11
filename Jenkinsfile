@@ -4,11 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building'
+                echo "Building ${env.JOB_NAME}"
             }
         }
         stage('Test') {
             steps {
+	    	sh 'python -m pytest || true'
                 echo 'Testing'
             }
         }
