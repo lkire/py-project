@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    environment {
+    	SRC_DIR = 'project'
+    }
+
     stages {
         stage('Build') {
             steps {
@@ -9,9 +13,11 @@ pipeline {
         }
         stage('Test') {
             steps {
-	    	sh 'python -m pytest || true'
-                echo 'Testing'
-            }
+	        echo 'Testing'
+            	sh 'python -m pytest || true'
+		echo 'Linting'
+		sh "pylint ${env.SRC_DIR}"
+	    }
         }
         stage('Deploy') {
             steps {
